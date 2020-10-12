@@ -1,0 +1,8 @@
+from app_store_scraper import Podcast
+from pprint import pprint
+
+sysk = Podcast(country="nz", app_name="stuff you should know")
+sysk.review(how_many=20)
+
+pprint(sysk.reviews)
+pprint(sysk.reviews_count)
